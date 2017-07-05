@@ -1,0 +1,22 @@
+header{
+  padding-top: 45px;
+}
+
+nav{
+  float: right;
+  li{
+    display: inline-block;
+    a{
+      display: block;
+      padding: 12px 21px;
+    }
+  }
+}
+.menuTitle{
+    img{
+      display:inline-block;
+    }
+    h2{
+      display:inline-block;
+    }
+}
