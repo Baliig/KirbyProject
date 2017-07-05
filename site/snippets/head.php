@@ -7,7 +7,7 @@
     <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
     <meta name="description" content="<?= $site->description()->html() ?>">
    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> -->
-    <?= css('assets/css/style.css') ?>
+    <?= css('assets/css/min/style.css') ?>
 
 </head>
 
