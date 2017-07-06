@@ -8,7 +8,7 @@
     <meta name="description" content="<?= $site->description()->html() ?>">
    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> -->
     <?= css('assets/css/min/style.css') ?>
-
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 
 <body>

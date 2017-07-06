@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+@import "import/bootstrap.min";
+@import "import/bootstrap-theme.min";
+@import "import/slicknav";
+@import "import/slick";
+@import "import/slick-theme";
+@import "import/header";
+@import "import/footer";
 
 *,
 *:before,
@@ -14,6 +21,12 @@ body, html{
   font-size: 16px;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 h1,h2,h3,h4,h5,h6{
   font-family: 'Nunito', sans-serif;
 }
@@ -23,6 +36,10 @@ a{
   color:#333333;
   font-size:170%;
   text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: #3c763d;
+  }
 }
 
 ul, li{
@@ -31,40 +48,74 @@ ul, li{
   padding: 0px;
 }
 
-@import "import/grid";
-@import "import/header";
+main{
+  text-align: center;
+  width: 1200px;
+  margin: auto;
+}
 
+//Carousel
 
-/*
-$colorLink: red;
-$colorLinkHover: orange;
-$colorContent: blue;
+.home-carousel{
+  div{
+    img{
+      width:1200px;
+      height: 700px;
+    }
+  }
+}
 
-$padding: 10px;
-$margin: 15px;
-
-nav {
-  float:right;
-  ul {
-    li {
-      display: inline;
-      padding: $padding;
-      margin: $margin;
-      a {
-        text-decoration: none;
-        color: $colorLink;
-        &:hover {
-          color: $colorLinkHover;
-        }
+@media screen and (min-width: 900px) and (max-width: 1200px){
+  main{
+    width: 900px;
+    margin: auto;
+  }
+  .home-carousel {
+    div {
+      img {
+        width: 900px;
+        height: 400px;
       }
     }
   }
 }
 
-.grid {
-  position: relative;
-  width: 1080px;
-  text-aligne:left;
-} */
+@media screen and (max-width: 899px) {
+  main{
+    width: 400px;
+    margin: auto;
+  }
+  .home-carousel {
+    div {
+      img {
+        width: 400px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+
+
+//Menu Mobile
+
+.slicknav_menu {
+  display:none;
+}
+
+.js #menu {
+  display:none;
+}
+
+@media screen and (max-width: 899px) {
+
+
+  .js .slicknav_menu {
+    display:block;
+  }
+}
+
+
+
 
 

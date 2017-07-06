@@ -1,14 +1,22 @@
 <header>
     <div class="container">
-        <div class="col-lg-6">
+        <div class="logoHeader">
             <a class="menuTitle" href="<?= url() ?>" rel="home">
-                <img src="<?php echo kirby()->urls()->assets() . '/images/logo.png' ?>" width="200px">
-                <h2>J. Portelli</h2>
+                <img src="<?php echo kirby()->urls()->assets() . '/images/logo.png' ?>" >
+                <h3>J. Portelli</h3>
             </a>
         </div>
-        <div class="col-lg-12">
+        <div class="menuHeader" >
             <?php snippet('menu') ?>
         </div>
     </div>
 </header>
+
+<ul id="menu">
+    <?php foreach($pages->visible() as $item): ?>
+        <li class="menu-item<?= r($item->isOpen(), ' is-active') ?>">
+            <a href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+        </li>
+    <?php endforeach ?>
+</ul>
 
