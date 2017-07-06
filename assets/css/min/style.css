@@ -1736,12 +1736,9 @@ body, html {
   font-size: 16px; }
 
 body {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  min-height: 100vh; }
+  /*display: flex;
+  flex-direction: column;
+  min-height: 100vh;*/ }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Nunito', sans-serif; }
@@ -1753,7 +1750,10 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: none;
-    color: #3c763d; }
+    color: #FFFFFF; }
+
+.is-active a {
+  color: #FFFFFF; }
 
 ul, li {
   list-style: none;
